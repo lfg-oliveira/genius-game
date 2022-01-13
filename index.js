@@ -41,7 +41,7 @@ const lightColor = (element, num) => {
   }, num - 250);
   setTimeout(() => {
     element.classList.toggle("selected");
-  }, num + 250);
+  }, num);
 };
 
 const checkOrder = () => {
@@ -87,6 +87,7 @@ const lose = () => {
 };
 
 const startGame = () => {
+	score = 0;
   alert("Iniciando um novo jogo");
   newRound();
 };

@@ -77,6 +77,16 @@ const createColorElement = (color) => {
 const clicked = (color) => {
   playerSelection.push(color);
   lightColor(createColorElement(color), 0);
+  setTimeout(checkOrder(), 2000);
 };
 
-const lose = () => {};
+const lose = () => {
+  alert("Você errou! Seu score final é de " + score + ".");
+  order = [];
+  playerSelection = [];
+};
+
+const startGame = () => {
+  alert("Iniciando um novo jogo");
+  newRound();
+};

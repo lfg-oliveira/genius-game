@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(139, 255, 216);
+  background-color: #e0e0e0;
 }
 
 .game {
@@ -47,7 +47,7 @@ body {
 
 .am {
   grid-area: am;
-  background-color: rgb(221, 167, 29);
+  background-color: rgb(228, 175, 42);
 }
 
 .verde {
@@ -57,4 +57,39 @@ body {
 
 .selected {
   opacity: 0.8;
+}
+
+.start-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.start-game-btn {
+  padding: 1rem 4rem;
+  font-size: larger;
+  border-style: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 12px 12px 23px #969696, -12px -12px 23px #ffffff;
+}
+
+.start-game-btn:hover {
+  border-radius: 12px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 12px 12px 23px #969696, -12px -12px 23px #ffffff;
+}
+
+.start-game-btn:active {
+  border-radius: 12px;
+  background: #e0e0e0;
+  box-shadow: inset 12px 12px 23px #969696, inset -12px -12px 23px #ffffff;
+}
+
+.btn-pressed {
+  border-radius: 12px;
+  background: #e0e0e0;
+  box-shadow: inset 12px 12px 23px #969696, inset -12px -12px 23px #ffffff;
+  cursor: not-allowed;
 }
